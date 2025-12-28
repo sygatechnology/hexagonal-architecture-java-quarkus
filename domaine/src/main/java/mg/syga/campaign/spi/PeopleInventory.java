@@ -1,6 +1,6 @@
-package mg.syga.people.spi;
+package mg.syga.campaign.spi;
 
-import mg.syga.people.model.People;
+import mg.syga.campaign.model.People;
 
 import java.util.List;
 

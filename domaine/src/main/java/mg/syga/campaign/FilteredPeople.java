@@ -1,6 +1,6 @@
-package mg.syga.people;
+package mg.syga.campaign;
 
-import mg.syga.people.model.People;
+import mg.syga.campaign.model.People;
 
 import java.util.List;
 import java.util.UUID;

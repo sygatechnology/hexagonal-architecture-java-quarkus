@@ -1,6 +1,6 @@
-package mg.syga.people.spi.stubs;
+package mg.syga.campaign.spi.stubs;
 
-import mg.syga.people.spi.Notification;
+import mg.syga.campaign.spi.Notification;
 
 public class InMemoryNotification implements Notification {
 

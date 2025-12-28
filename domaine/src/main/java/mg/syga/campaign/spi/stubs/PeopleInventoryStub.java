@@ -1,10 +1,10 @@
-package mg.syga.people.spi.stubs;
+package mg.syga.campaign.spi.stubs;
 
-import mg.syga.people.model.Account;
-import mg.syga.people.model.Contact;
-import mg.syga.people.model.Identity;
-import mg.syga.people.model.People;
-import mg.syga.people.spi.PeopleInventory;
+import mg.syga.campaign.model.Account;
+import mg.syga.campaign.model.Contact;
+import mg.syga.campaign.model.Identity;
+import mg.syga.campaign.model.People;
+import mg.syga.campaign.spi.PeopleInventory;
 
 import java.util.List;
 

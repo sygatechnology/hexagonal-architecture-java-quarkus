@@ -1,16 +1,16 @@
-package mg.syga.people;
+package mg.syga.campaign;
 
-import mg.syga.people.api.FilterCriteria;
-import mg.syga.people.model.People;
-import mg.syga.people.spi.PeopleInventory;
+import mg.syga.campaign.api.PeopleCriteria;
+import mg.syga.campaign.model.People;
+import mg.syga.campaign.spi.PeopleInventory;
 
 import java.util.List;
 
-public class FilterService implements FilterCriteria {
+public class PeopleService implements PeopleCriteria {
 
     private final PeopleInventory peopleInventory;
 
-    public FilterService(PeopleInventory peopleInventory) {
+    public PeopleService(PeopleInventory peopleInventory) {
         this.peopleInventory = peopleInventory;
     }
 

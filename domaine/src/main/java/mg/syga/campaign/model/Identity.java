@@ -1,4 +1,4 @@
-package mg.syga.people.model;
+package mg.syga.campaign.model;
 
 import java.util.UUID;
 

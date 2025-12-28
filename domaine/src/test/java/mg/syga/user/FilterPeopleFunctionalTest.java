@@ -1,14 +1,14 @@
 package mg.syga.user;
 
-import mg.syga.people.FilterService;
-import mg.syga.people.FilteredPeople;
-import mg.syga.people.api.FilterCriteria;
-import mg.syga.people.model.Account;
-import mg.syga.people.model.Contact;
-import mg.syga.people.model.Identity;
-import mg.syga.people.model.People;
-import mg.syga.people.spi.PeopleInventory;
-import mg.syga.people.spi.stubs.PeopleInventoryStub;
+import mg.syga.campaign.PeopleService;
+import mg.syga.campaign.FilteredPeople;
+import mg.syga.campaign.api.PeopleCriteria;
+import mg.syga.campaign.model.Account;
+import mg.syga.campaign.model.Contact;
+import mg.syga.campaign.model.Identity;
+import mg.syga.campaign.model.People;
+import mg.syga.campaign.spi.PeopleInventory;
+import mg.syga.campaign.spi.stubs.PeopleInventoryStub;
 import org.assertj.core.api.Condition;
 import org.junit.jupiter.api.Test;
 
@@ -77,10 +77,10 @@ class FilterPeopleFunctionalTest {
         var maxAge = 45;
 
         PeopleInventory peopleInventory = new PeopleInventoryStub(people);
-        FilterCriteria filterCriteria = new FilterService(peopleInventory);
+        PeopleCriteria peopleCriteria = new PeopleService(peopleInventory);
 
         // When
-        FilteredPeople filteredPeople = filterCriteria.forAges(minAge, maxAge);
+        FilteredPeople filteredPeople = peopleCriteria.forAges(minAge, maxAge);
 
         // Then
         System.out.println(filteredPeople);

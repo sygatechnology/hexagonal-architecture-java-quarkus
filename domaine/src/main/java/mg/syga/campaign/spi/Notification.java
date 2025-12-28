@@ -1,4 +1,4 @@
-package mg.syga.people.spi;
+package mg.syga.campaign.spi;
 
 public interface Notification {
     void sendSMS(String phoneNumber, String message);
