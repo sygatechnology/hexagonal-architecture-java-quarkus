@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>domaine</module>
-        <module>infrastrucuture</module>
+        <module>domain</module>
+        <module>infrastructure</module>
     </modules>
 
     <properties>
